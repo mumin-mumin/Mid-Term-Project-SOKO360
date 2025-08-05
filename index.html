@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Finder</title>
+
+    <script src="https://kit.fontawesome.com/b9d5b00e65.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TRPKP8V6');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Hotjar Tracking Code for Site 4942485 (name missing) -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 4942485,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <h1>Event Finder</h1>
+            <p>Tired of being stuck in the house? Need to get out for some fun? Check out Event Finder, Form Wikendi app created to show upcoming events at an arena near you!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="dropDownMenus">
+            <div class="wrapper">
+                <form action="" method="" class="finderForm" name="finderForm">
+                    <div>
+                        <div class="cityDropDown">
+                            <label for="city">City </label>
+                            <select name="cityName" id="city" required>
+                                <option value="" disabled selected>Select city</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="New York">New York</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Montreal">Montreal</option>
+                                <option value="Vancouver">Vancouver</option>
+                        
+                            </select>
+                        </div>
+                        <div class="categoryDropDown">
+                            <label for="category">Category </label>
+                            <select name="categoryName" id="category" required>
+                                <option value="All" selected>All</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Music">Music</option>
+                                <option value="Family">Family</option>
+                                <option value="Arts & Theatre">Arts & Theatre</option>
+                            </select>
+                        </div>
+                        <div class="startDateDropDown">
+                            <label for="startDate">Start Date </label>
+                            <input type="date" name="startDate" class="startDate" id="startDate" required>
+                        </div>
+                        <div class="endDateDropDown">
+                            <label for="endDate">End Date </label>
+                            <input type="date" name="endDate" class="endDate" id="startDate" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">Show Me Events!</button>
+                </form>
+            </div>
+            <!--.wrapper end-->
+        </section>
+        <!--.dropDownMenus end-->
+
+        <section class="searchResults">
+            <div class="wrapper">
+                <ul class="resultsContainer">
+                    <!-- results from API go here -->
+                </ul>
+                <!--resultsContainer end-->
+            </div>
+            <!--.wrapper end-->
+        </section>
+        <!--.searchResults end-->
+
+    </main>
+    <footer>
+        <p>Created by Mumin</a>
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRPKP8V6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
