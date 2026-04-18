@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear - SOKO360</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Prime
+                <color style="color: #ff6600;">picks</color>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <ul>
+                        <li>
+
+                    </ul>
+
+                    <div class="cart-icon" role="button" aria-label="Open shopping cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+
+        </div>
+        <div class="hamburger" role="button" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soko360</h1>
+                <p>Protect and enhance your mobile experience with our high-quality accessories</p>
+                <a href="#shop" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="featured" id="shop">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="shop-controls">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for products...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="all">
+                    <img src="s1.png" alt="All Products">
+                    <h3>All Products</h3>
+                </div>
+                <div class="category-card" data-category="Phone Cases">
+                    <img src="https://via.placeholder.com/300x200?text=Phone+Cases" alt="Phone Cases">
+                    <h3>Phone Cases</h3>
+                </div>
+                <div class="category-card" data-category="Screen Protectors">
+                    <img src="https://via.placeholder.com/300x200?text=Screen+Protectors" alt="Screen Protectors">
+                    <h3>Screen Protectors</h3>
+                </div>
+                <div class="category-card" data-category="fans">
+                    <img src="photos/" alt="Chargers">
+                    <h3>Chargers</h3>
+                </div>
+                <div class="category-card" data-category="Headphones">
+                    <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Headphones">
+                    <h3>Headphones</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechGear</h3>
+                    <p>Your one-stop shop for premium phone accessories</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> (254) 723682923</p>
+                    <p><i class="fas fa-envelope"></i> soko360@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lithuli St, Nairobi</p>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Soko's Tech Slns. All rights reserved.</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" aria-label="Close shopping cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

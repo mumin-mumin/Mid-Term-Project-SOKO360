@@ -1,0 +1,25 @@
+{
+    "name": "prime",
+    "version": "1.0.0",
+    "main": "daraja.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node daraja.js",
+        "start:tunnel": "node init-tunnel.js",
+        "start:dev": "npx concurrently -k -n \"SERVER,TUNNEL\" -c \"bgBlue.bold,bgMagenta.bold\" \"node daraja.js\" \"node init-tunnel.js\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "concurrently": "^9.2.1"
+    },
+    "dependencies": {
+        "axios": "^1.13.2",
+        "base-64": "^1.0.0",
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "localtunnel": "^2.0.2"
+    }
+}
