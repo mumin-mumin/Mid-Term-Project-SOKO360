@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Event Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        
+        #message {
+            margin-top: 15px;
+            color: red;
+        }
+    </style>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script type="module" src="./firebase.js" defer></script>
+    <script type="module" src="./signup.js" defer></script>
+
+</head>
+
+<body>
+    <h2>Create Account</h2>
+
+    <form id="signupForm">
+
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password (min 6 chars)" required>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+        <p id="message"></p>
+
+    </form>
+</body>
+
+</html>
